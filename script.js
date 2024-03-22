@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Add your image URLs here
-    const imageUrls = [
-        "portfolio1.jpg",
+// scripts.js
+
+const photos = [
+     "portfolio1.jpg",
         "portfolio2.jpg",
         "portfolio3.jpg",
         "portfolio4.jpg",
@@ -12,16 +12,28 @@ document.addEventListener("DOMContentLoaded", function() {
         "portfolio9.jpg",
         "portfolio10.jpg",
         "portfolio11.jpg",
-        // Add more image URLs as needed
-    ];
+    // Add more photo URLs as needed
+];
 
-    const gallery = document.querySelector('.gallery');
+const gridContainer = document.getElementById("grid-container");
 
-    // Loop through imageUrls and create img elements
-    imageUrls.forEach(url => {
-        const img = document.createElement('img');
-        img.src = url;
-        img.alt = 'Photograph';
-        gallery.appendChild(img);
+function createGridItem(photoUrl) {
+    const gridItem = document.createElement("div");
+    gridItem.classList.add("grid-item");
+
+    const img = document.createElement("img");
+    img.src = photoUrl;
+    img.alt = "Photograph";
+    
+    gridItem.appendChild(img);
+    return gridItem;
+}
+
+function renderPhotos() {
+    photos.forEach(photoUrl => {
+        const gridItem = createGridItem(photoUrl);
+        gridContainer.appendChild(gridItem);
     });
-});
+}
+
+renderPhotos();
