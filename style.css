@@ -22,6 +22,7 @@ header {
 
 header h1 {
     font-size: 36px;
+    margin-top: 20px; /* Added margin for better centering */
 }
 
 nav ul {
@@ -44,17 +45,19 @@ nav ul li a:hover {
 }
 
 main {
-    padding-top: 100px;
+    padding-top: 150px; /* Increased padding for better spacing */
+    max-width: 1200px; /* Limit main content width */
+    margin: 0 auto; /* Center the main content */
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr)); /* Four images across */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
     gap: 20px;
 }
 
 .gallery img {
-    width: 100%; /* Resize images to fill grid cells */
+    width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -62,7 +65,7 @@ main {
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1); /* Enlarge on hover */
 }
 
 .about, .contact {
@@ -72,6 +75,7 @@ main {
 
 .about h2, .contact h2 {
     margin-bottom: 20px;
+    font-size: 24px; /* Adjusted font size for modern look */
 }
 
 footer {
