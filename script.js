@@ -1,5 +1,3 @@
-// scripts.js
-
 const photos = [
      "portfolio1.jpg",
      "portfolio2.jpg",
