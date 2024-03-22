@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #fff; /* Background color set to white */
     color: #333;
 }
 
@@ -15,14 +15,10 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
 }
 
 header h1 {
-    font-size: 36px;
-    margin-top: 20px; /* Added margin for better centering */
+    font-size: 24px; /* Reduced font size for minimalist design */
 }
 
 nav ul {
@@ -45,15 +41,15 @@ nav ul li a:hover {
 }
 
 main {
-    padding-top: 150px; /* Increased padding for better spacing */
-    max-width: 1200px; /* Limit main content width */
-    margin: 0 auto; /* Center the main content */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 10px;
 }
 
 .gallery img {
@@ -65,25 +61,12 @@ main {
 }
 
 .gallery img:hover {
-    transform: scale(1.1); /* Enlarge on hover */
-}
-
-.about, .contact {
-    padding: 40px;
-    text-align: center;
-}
-
-.about h2, .contact h2 {
-    margin-bottom: 20px;
-    font-size: 24px; /* Adjusted font size for modern look */
+    transform: scale(1.1);
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+    padding: 10px 0;
+    font-size: 14px; /* Reduced font size for minimalist design */
