@@ -8,6 +8,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #fff; /* Background color set to white */
     color: #333;
+    overflow: hidden; /* Prevents horizontal scrollbar */
 }
 
 header {
@@ -18,43 +19,35 @@ header {
 }
 
 header h1 {
-    font-size: 24px; /* Reduced font size for minimalist design */
+    font-size: 36px;
+    margin-bottom: 20px; /* Add margin below title */
 }
 
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ffd700;
+.title-divider {
+    width: 80%; /* Adjust width of the line */
+    height: 1px; /* Height of the line */
+    background-color: #ccc; /* Color of the line */
+    margin: 0 auto 20px auto; /* Center line and add margin below */
 }
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 10px;
     padding: 20px;
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .gallery img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -63,10 +56,3 @@ main {
 .gallery img:hover {
     transform: scale(1.1);
 }
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 14px; /* Reduced font size for minimalist design */
