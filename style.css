@@ -1,3 +1,6 @@
+
+/* style.css */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,14 +12,14 @@ body {
 }
 
 .image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%; /* Ensure the container fits within the screen */
+    margin: 0 auto; /* Center the container horizontally */
     padding: 20px;
+    column-count: 4; /* Adjust the number of columns as needed */
+    column-gap: 20px; /* Adjust the gap between columns as needed */
 }
 
 .image-container img {
-    max-width: calc(100% / 3 - 20px); /* Adjust the number of images per row */
-    margin: 10px; /* Adjust the spacing between images */
-}
+    width: 100%; /* Make images fill the column width */
+    display: block;
+    margin-bottom: 20px; /* Adjust the spacing between images as needed */
