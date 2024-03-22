@@ -32,10 +32,12 @@ body {
     max-width: 1200px; /* Set maximum width for the container */
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px;
+    column-count: 4; /* Set the number of columns */
+    column-gap: 20px; /* Set the gap between columns */
 }
 
 .image-container img {
-    width: 100%; /* Make images fill the container width */
+    width: 100%; /* Make images fill the column width */
     display: block;
     margin-bottom: 20px; /* Adjust the spacing between images as needed */
     border-radius: 8px; /* Optional: Add some border-radius for aesthetics */
