@@ -1,3 +1,5 @@
+/* style.css */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,57 +32,15 @@ body {
     max-width: 1200px; /* Set maximum width for the container */
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px;
-    column-count: 4; /* Adjust the number of columns as needed */
-    column-gap: 20px; /* Adjust the gap between columns as needed */
+}
+
+.image-container a {
+    display: inline-block;
+    margin: 5px; /* Adjust the margin between images */
 }
 
 .image-container img {
-    width: 100%; /* Make images fill the column width */
+    width: 100%; /* Make images fill the container width */
     display: block;
-    margin-bottom: 20px; /* Adjust the spacing between images as needed */
-    border-radius: 8px; /* Optional: Add some border-radius for aesthetics */
-    transition: transform 0.3s ease; /* Add transition for smooth effect */
-    cursor: url('camera.png'), auto; /* Set cursor to camera icon */
-}
-
-.image-container img:hover {
-    transform: scale(1.1); /* Enlarge the image on hover */
-}
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 9999; /* Sit on top */
-    padding-top: 50px; /* Location of the modal */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0,0,0,0.9); /* Black background with opacity */
-    overflow: auto; /* Enable scroll if needed */
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%; /* Set width to 80% of modal */
-    max-width: 800px; /* Limit maximum width */
-    max-height: 80vh; /* Limit maximum height to 80% of viewport height */
-}
-
-.close {
-    color: #fff;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 36px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
+    border: 1px solid #000; /* Add a small black border around the image */
 }
