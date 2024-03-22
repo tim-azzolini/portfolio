@@ -41,7 +41,7 @@ body {
     margin-bottom: 20px; /* Adjust the spacing between images as needed */
     border-radius: 8px; /* Optional: Add some border-radius for aesthetics */
     transition: transform 0.3s ease; /* Add transition for smooth effect */
-    cursor: url('camera.png'), auto; /* Set cursor to camera icon */
+    cursor: url('cursor.png'), auto; /* Set cursor to camera icon */
 }
 
 .image-container img:hover {
