@@ -2,16 +2,16 @@
 
 const photos = [
      "portfolio1.jpg",
-        "portfolio2.jpg",
-        "portfolio3.jpg",
-        "portfolio4.jpg",
-        "portfolio5.jpg",
-        "portfolio6.jpg",
-        "portfolio7.jpg",
-        "portfolio8.jpg",
-        "portfolio9.jpg",
-        "portfolio10.jpg",
-        "portfolio11.jpg",
+     "portfolio2.jpg",
+     "portfolio3.jpg",
+     "portfolio4.jpg",
+     "portfolio5.jpg",
+     "portfolio6.jpg",
+     "portfolio7.jpg",
+     "portfolio8.jpg",
+     "portfolio9.jpg",
+     "portfolio10.jpg",
+     "portfolio11.jpg",
     // Add more photo URLs as needed
 ];
 
