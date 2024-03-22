@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> TA </title>
-    <link rel="stylesheet" href="style.css">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1> Portfolio </h1>
-        <div class="title-divider"></div> <!-- Add a line below the title -->
+        <h1>Photography Portfolio</h1>
     </header>
     <main>
-        <section class="gallery">
+        <section id="portfolio" class="gallery">
             <!-- Images will be dynamically added here -->
         </section>
     </main>
+
+    <div id="myModal" class="overlay">
+        <div class="overlay-content">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeModal()">&times;</a>
+            <img id="modalImg" src="" alt="Modal Image">
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
