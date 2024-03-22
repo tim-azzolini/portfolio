@@ -8,7 +8,6 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #fff; /* Background color set to white */
     color: #333;
-    overflow: hidden; /* Prevents horizontal scrollbar */
 }
 
 header {
@@ -20,7 +19,7 @@ header {
 
 header h1 {
     font-size: 36px;
-    margin-bottom: 20px; /* Add margin below title */
+    margin-bottom: 10px; /* Reduced margin below the title */
 }
 
 .title-divider {
@@ -33,26 +32,17 @@ header h1 {
 main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 10px;
+    gap: 0; /* No gap between grid items */
     padding: 20px;
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: center;
 }
 
 .gallery img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.1);
-}
