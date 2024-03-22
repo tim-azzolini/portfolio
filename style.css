@@ -31,36 +31,3 @@ body {
 .grid-item:hover img {
     transform: scale(1.1);
 }
-javascript
-Copy code
-// scripts.js
-
-const photos = [
-    "photo1.jpg",
-    "photo2.jpg",
-    "photo3.jpg",
-    // Add more photo URLs as needed
-];
-
-const gridContainer = document.getElementById("grid-container");
-
-function createGridItem(photoUrl) {
-    const gridItem = document.createElement("div");
-    gridItem.classList.add("grid-item");
-
-    const img = document.createElement("img");
-    img.src = photoUrl;
-    img.alt = "Photograph";
-    
-    gridItem.appendChild(img);
-    return gridItem;
-}
-
-function renderPhotos() {
-    photos.forEach(photoUrl => {
-        const gridItem = createGridItem(photoUrl);
-        gridContainer.appendChild(gridItem);
-    });
-}
-
-renderPhotos();
