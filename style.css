@@ -1,5 +1,3 @@
-/* style.css */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,19 +10,20 @@ body {
 }
 
 .header {
-    text-align: center;
     margin-bottom: 30px; /* Add space between header and images */
 }
 
 .header-title {
+    font-size: 24px; /* Make text smaller */
     font-weight: normal; /* Use thin, minimalist text */
+    margin-bottom: 10px; /* Add spacing below the title */
 }
 
 .header-line {
-    width: 60px; /* Set width of the line */
+    width: 100%; /* Extend the line all the way across the page */
     border: none;
     border-top: 1px solid #888; /* Use minimalist line */
-    margin: 10px auto; /* Center the line and add spacing */
+    margin-bottom: 20px; /* Add spacing below the line */
 }
 
 .image-container {
@@ -41,7 +40,7 @@ body {
     margin-bottom: 20px; /* Adjust the spacing between images as needed */
     border-radius: 8px; /* Optional: Add some border-radius for aesthetics */
     transition: transform 0.3s ease; /* Add transition for smooth effect */
-    cursor: url('cursor.png'), auto; /* Set cursor to camera icon */
+    cursor:('cursor.png'), auto; /* Set cursor to camera icon */
 }
 
 .image-container img:hover {
