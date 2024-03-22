@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> TA </title>
+    <title>Minimalist Photography Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,23 +13,29 @@
         <h1 class="header-title">Portfolio</h1>
         <hr class="header-line">
     </header>
+    
     <div class="image-container">
-        <img src="portfolio1.jpg" alt="Photograph">
-          <img src="portfolio2.jpg" alt="Photograph">
-          <img src="portfolio3.jpg" alt="Photograph">
-          <img src="portfolio4.jpg" alt="Photograph">
-          <img src="portfolio5.jpg" alt="Photograph">
-          <img src="portfolio6.jpg" alt="Photograph">
-          <img src="portfolio7.jpg" alt="Photograph">
-          <img src="portfolio8.jpg" alt="Photograph">
-          <img src="portfolio9.jpg" alt="Photograph">
-          <img src="portfolio10.jpg" alt="Photograph">
-          <img src="portfolio11.jpg" alt="Photograph">
+          <img src="portfolio1.jpg" alt="Photograph" onclick="openModal(this)">
+          <img src="portfolio2.jpg" alt="Photograph" onclick="openModal(this)">
+          <img src="portfolio3.jpg" alt="Photograph" onclick="openModal(this)">
+          <img src="portfolio4.jpg" alt="Photograph" onclick="openModal(this)">
+          <img src="portfolio5.jpg" alt="Photograph" onclick="openModal(this)">
+          <img src="portfolio6.jpg" alt="Photograph" onclick="openModal(this)">
+          <img src="portfolio7.jpg" alt="Photograph" onclick="openModal(this)">
+          <img src="portfolio8.jpg" alt="Photograph" onclick="openModal(this)">
+          <img src="portfolio9.jpg" alt="Photograph" onclick="openModal(this)">
+          <img src="portfolio10.jpg" alt="Photograph" onclick="openModal(this)">
+          <img src="portfolio11.jpg" alt="Photograph" onclick="openModal(this)">
         <!-- Add more images as needed -->
     </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
 
     
