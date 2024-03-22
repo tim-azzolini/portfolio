@@ -1,25 +1,2 @@
 
-/* style.css */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.image-container {
-    max-width: 100%; /* Ensure the container fits within the screen */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px;
-    column-count: 4; /* Adjust the number of columns as needed */
-    column-gap: 20px; /* Adjust the gap between columns as needed */
-}
-
-.image-container img {
-    width: 100%; /* Make images fill the column width */
-    display: block;
-    margin-bottom: 20px; /* Adjust the spacing between images as needed */
+//na
