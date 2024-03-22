@@ -63,9 +63,8 @@ body {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%; /* Set width to 80% of modal */
-    max-width: 800px; /* Limit maximum width */
-    max-height: 80vh; /* Limit maximum height to 80% of viewport height */
+    max-width: 100%; /* Set maximum width to fit the viewport */
+    max-height: 100%; /* Set maximum height to fit the viewport */
 }
 
 .close {
