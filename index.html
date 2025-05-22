@@ -1,55 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TA</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="header-title">Portfolio</h1>
-        <div class="dropdown">
-            <button class="dropbtn">Filter by</button>
-            <div class="dropdown-content">
-                <a href="#" onclick="filterImages('featured')">Featured</a>
-                <a href="#" onclick="filterImages('digital')">Digital</a>
-                <a href="#" onclick="filterImages('film')">Film</a>
-            </div>
-        </div>
-        <hr class="header-line">
-    </header>
-    
-    <div class="image-container">
-        <img src="film1.jpg" alt="film 1" onclick="openModal(this)" class="film">
-        <img src="film2.jpg" alt="film 2" onclick="openModal(this)" class="film">
-        <img src="film3.jpg" alt="film 3" onclick="openModal(this)" class="film">
-        <img src="film4.jpg" alt="film 4" onclick="openModal(this)" class="film">
-        <img src="film5.jpg" alt="film 5" onclick="openModal(this)" class="film">
-        <img src="film6.jpg" alt="film 6" onclick="openModal(this)" class="film">
-        <img src="film7.jpg" alt="film 7" onclick="openModal(this)" class="film">
-        <img src="film8.jpg" alt="film 8" onclick="openModal(this)" class="film">
-        <img src="film9.jpg" alt="film 9" onclick="openModal(this)" class="film">
-        <img src="film10.jpg" alt="film 10" onclick="openModal(this)" class="film">
+  <header>
+    <h1>Portfolio</h1>
+  </header>
 
-        <img src="digital1.jpg" alt="digital 1" onclick="openModal(this)" class="digital">
-        <img src="digital2.jpg" alt="digital 2" onclick="openModal(this)" class="digital">
-        <img src="digital3.jpg" alt="digital 3" onclick="openModal(this)" class="digital">
-        <img src="digital4.jpg" alt="digital 4" onclick="openModal(this)" class="digital">
-        <img src="digital5.jpg" alt="digital 5" onclick="openModal(this)" class="digital">
-        <img src="digital6.jpg" alt="digital 6" onclick="openModal(this)" class="digital">
-        <img src="digital7.jpg" alt="digital 7" onclick="openModal(this)" class="digital">
-        <img src="digital8.jpg" alt="digital 8" onclick="openModal(this)" class="digital">
-        <img src="digital9.jpg" alt="digital 9" onclick="openModal(this)" class="digital">
-        <img src="digital10.jpg" alt="digital 10" onclick="openModal(this)" class="digital">
-        <!-- Add more images as needed -->
-    </div>
+  <div id="gallery"></div>
 
-    <div id="modal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modal-image">
-    </div>
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" class="lightbox-content" src="" alt="">
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
